@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>LCR Calculator</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <!-- radio -->
+  <input type="radio" id="LCRRadio" name="variables" checked>
+  <label for="LCRRadio">LCR</label>
+
+  <input type="radio" id="cashandcashequivalentsRadio" name="variables">
+  <label for="cashandcashequivalentsRadio">Cash and cash equivalents</label>
+
+  <input type="radio" id="marketablesecuritiesRadio" name="variables">
+  <label for="marketablesecuritiesRadio">Marketable securities</label>
+
+  <input type="radio" id="expected30dayscashoutflowsRadio" name="variables">
+  <label for="expected30dayscashoutflowsRadio">Expected 30-days cash outflows</label><br><br>
+  <!-- end radio -->
+  
+  <label for="v1" id="variable1">Cash and cash equivalents</label>
+  <input type="number" id="v1"><br><br>
+  
+  <label for="v2" id="variable2">Marketable securities</label>
+  <input type="number" id="v2"><br><br>
+  
+  <label for="v3" id="variable3">Expected 30-days cash outflows</label>
+  <input type="number" id="v3"><br><br>
+
+  <button id="btn">compute</button>
+
+  <p id="result"></p>
+  <script src="app.js"></script>
+</body>
+</html>
